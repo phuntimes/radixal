@@ -6,8 +6,9 @@ matrix:
       dist: xenial
       sudo: true
 install:
-  - pip install tox tox-travis coveralls
+  - pip install tox tox-travis coverage coveralls
 script:
   - tox
+  - coverage report
 after_success:
   - coveralls
