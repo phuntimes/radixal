@@ -6,7 +6,7 @@ Specific errors for formatting integer strings with predefined error messages.
 """
 
 __all__ = ['InvalidBase', 'UnknownCharacter']
-__version__ = '0.1.1'
+__version__ = '0.1.2'
 __author__ = 'Sean McVeigh'
 
 

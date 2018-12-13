@@ -25,7 +25,7 @@ standard alphabet (i.e. base < 2 or base > 36).
 """
 
 __all__ = ['radify', 'characterize', 'InvalidBase', 'UnknownCharacter']
-__version__ = '0.1.1'
+__version__ = '0.1.2'
 __author__ = 'Sean McVeigh'
 
 from .errors import InvalidBase, UnknownCharacter
