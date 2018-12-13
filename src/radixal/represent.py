@@ -6,7 +6,7 @@ Functions for formatting integer strings with arbitrary base.
 """
 
 __all__ = ['characterize', 'radify']
-__version__ = '0.1.2'
+__version__ = '0.1.3'
 __author__ = 'Sean McVeigh'
 
 from .errors import InvalidBase, UnknownCharacter
