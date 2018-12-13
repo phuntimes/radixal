@@ -1,5 +1,8 @@
 # Radical
 
+[![Build Status](https://travis-ci.org/phuntimes/radixal.svg?branch=master)](https://travis-ci.org/phuntimes/radixal)
+[![Coverage Status](https://coveralls.io/repos/github/phuntimes/radixal/badge.svg?branch=master)](https://coveralls.io/github/phuntimes/radixal?branch=master)
+
 A library for representing a base 10 integer as a string of arbitrary radix using
 standard alphabet `[0-9a-z]`.
 
