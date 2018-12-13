@@ -1,11 +1,14 @@
 language: python
 matrix:
   include:
-    - python: 3.6.6
-    - python: 3.7.0
+    - python: "3.5"
+    - python: "3.6"
+    - python: "3.7"
       dist: xenial
       sudo: true
 install:
-  - pip install tox tox-travis
+  - pip install .[coverage,coveralls]
 script:
-  - tox
+  - pytest --cov=radixal --cov-config .coveragerc.cfg tests
+after_success:
+  - coveralls

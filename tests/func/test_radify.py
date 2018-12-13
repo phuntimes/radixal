@@ -44,7 +44,7 @@ def values(n: int) -> Iterator[int]:
     'value', [
         pytest.param(
             i, id="value={:d}".format(i)
-        ) for i in values(4096)
+        ) for i in values(100)
     ]
 )
 @pytest.mark.parametrize(
@@ -55,6 +55,13 @@ def values(n: int) -> Iterator[int]:
     ]
 )
 def test_valid_base(value: int, base: int):
+    """
+    Test output from :func:`radify` passed to :class:`int` equals input.
+
+    :param value:
+    :param base:
+    :return:
+    """
     string = radify(value, base)
     actual = int(string, base)
     assert actual == value
@@ -68,5 +75,10 @@ def test_valid_base(value: int, base: int):
     ]
 )
 def test_invalid_base(base: int):
+    """
+    Test that :class:`InvalidBase` raises in appropriate conditions.
+
+    :param base: test value
+    """
     with pytest.raises(InvalidBase):
         radify(255, base)

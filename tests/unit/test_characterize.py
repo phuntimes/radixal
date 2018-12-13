@@ -37,7 +37,7 @@ def test_valid_character(value: int, expected: str):
 )
 def test_invalid_character(value: int):
     """
-    Test that digit is converted to its character appropriate character
+    Test that digit is converted to its character appropriate character.
 
     :param value: test value
     """

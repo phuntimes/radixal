@@ -5,6 +5,7 @@
 Library for representing a base 10 integer as a string of arbitrary base using
 standard alphabet.
 
+
 The highlight of this library is :func:`radix`, which is the main
 function. For example:
 

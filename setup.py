@@ -16,7 +16,7 @@ packages = find_packages(
 
 
 setup_requirements = [
-    "bumpversion>=0.5",
+    "bumpversion",
     "pytest-runner"
 ]
 
@@ -27,10 +27,21 @@ test_requirements = [
 
 
 extra_requirements = {
-    "pytest-plugins": [
+    "mypy": [
+        "mypy",
+        "pytest-mypy"
+    ],
+    "flake8": [
+        "flake8",
+        "flake8-docstrings",
         "pytest-flake8",
-        "pytest-mypy",
+    ],
+    "coverage": [
+        "coverage",
         "pytest-cov"
+    ],
+    "coveralls": [
+        "python-coveralls"
     ]
 }
 
