@@ -16,13 +16,13 @@ packages = find_packages(
 
 
 setup_requirements = [
-    "bumpversion>=0.5"
+    "bumpversion>=0.5",
+    "pytest-runner"
 ]
 
 
 test_requirements = [
-    "pytest>=4.0",
-    "pytest-runner"
+    "pytest>=4.0"
 ]
 
 
